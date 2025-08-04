@@ -9,7 +9,7 @@ This project includes advanced authentication, OTP verification, encryption, and
 
 ### ✅ Auth & Security
 - JWT-based authentication with access token
-- Password encryption using bcrypt
+- Password hashing using bcrypt
 - Phone number encryption (symmetric encryption)
 - OTP confirmation for:
   - Email verification during sign-up
