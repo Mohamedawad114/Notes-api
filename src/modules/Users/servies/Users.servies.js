@@ -79,7 +79,6 @@ export const confirmOtp = asyncHandler(async (req, res) => {
 });
 export const loginuser = asyncHandler(async (req, res) => {
   const key = process.env.SECRET_KEY;
-  console.log(key);
   const ip = req.ip;
   const { password, email } = req.body;
   const { error } = validateloginUser(req.body);

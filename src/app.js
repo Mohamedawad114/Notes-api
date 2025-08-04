@@ -19,7 +19,7 @@ app.use("/notes", note_controllor);
 await db_connection();
 
 app.use((err, req, res, next) => {
-  res.status(500).send(`something wrong: ${err.message}`);
+  res.status(err.cause||500).json({message:`something wrong`,err:err.message,stack:err.stack});
 });
 
 app.use((req, res) => {

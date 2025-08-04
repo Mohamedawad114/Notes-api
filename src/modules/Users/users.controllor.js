@@ -10,7 +10,7 @@ controllor.post("/login", loginRateLimit, users_serv.loginuser);
 controllor.put("/update", verifytoken, users_serv.updateUser);
 controllor.delete("/deleteuser", verifytoken, users_serv.deleteuser);
 controllor.get("/userdata", verifytoken, users_serv.userdata);
-controllor.post("/resetpasswordreq", verifytoken, users_serv.resetPasswordReq);
+controllor.get("/resetpasswordreq", verifytoken, users_serv.resetPasswordReq);
 controllor.patch(
   "/resetpasswordconfirm",
   verifytoken,

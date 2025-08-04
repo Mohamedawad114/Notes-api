@@ -7,7 +7,7 @@ function validateUser(obj) {
       .string()
       .required()
       .email()
-      .regex(/^[a-zA-Z0-9-#]+@gmail.com$/)
+      .regex(/^[a-zA-Z0-9-.+#]+@gmail.com$/)
       .trim()
       .lowercase()
       .message("invalid Email"),
